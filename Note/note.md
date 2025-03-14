@@ -3,4 +3,5 @@
 App Module >> as a root
 |-Users (Module)
 |-Orders (Module)
-|-Product
+|-Product (Module)
+|-....
