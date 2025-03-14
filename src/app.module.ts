@@ -1,10 +1,15 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { OpenapiModule } from './openapi/openapi.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [],
+  imports: [OpenapiModule, UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
+
+
+//HTTP GET/ --> controller -->service
